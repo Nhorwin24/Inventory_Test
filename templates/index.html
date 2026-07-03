@@ -908,10 +908,11 @@
     </div>
 
     <!-- Add/Edit Modal -->
-    <div id="itemModal" class="modal" onclick="if (event.target === this) closeModal()">
+    <div id="itemModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
                 <h2 id="modalTitle">Add New Item</h2>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
             </div>
             <form id="itemForm" onsubmit="handleFormSubmit(event)">
                 <div class="form-row">
@@ -1118,6 +1119,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h2>Permanently Delete Item</h2>
+                <button class="close-btn" onclick="closePermanentDeleteModal()">&times;</button>
             </div>
             <form onsubmit="confirmPermanentDelete(event)">
                 <div class="modal-field">
